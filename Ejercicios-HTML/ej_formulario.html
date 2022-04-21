@@ -28,8 +28,8 @@
         <input type="text" id="Apellido" placeholder="Ingrese un apellido" size="40">
     </p>
     <p>
-        Sexo:  <label for="Radio_Masculino" > Masculino </label> <input type="radio" value="masculino" id="Radio_Masculino" size="40">
-               <label for="Radio_Femenino"> Femenino</label> <input type="radio" value="femenino" id="Radio_Femenino" size="40">
+        Sexo:  <label for="Radio_Masculino" > Masculino </label> <input type="radio" value="masculino" name="Sexo" id="Radio_Masculino" size="40">
+        <label for="Radio_Femenino"> Femenino</label> <input type="radio" value="femenino" name="Sexo" id="Radio_Femenino" size="40">
     </p>
     <p>
         <label for="edad"  >Edad: </label> <input type="number" id="edad">
@@ -41,31 +41,31 @@
         <label for="Ususario" > Usuario: </label> <input type="text" id="Ususario" placeholder="Usuario" size="40">
     </p>
     <p>
-        Password: <input type="password" name="Password" id="password" maxlength="12" placeholder="Password" size="40">
+        <label for="password"> Password: </label> <input type="password" name="Password" id="password" maxlength="12" placeholder="Password" size="40">
     </p>
     <p>
-        Confirmar Password: <input type="password" name="Password" id="password" maxlength="12" placeholder="Password" size="40">
+        <label for="Conpassword"> Confirmar Password: </label> <input type="password" name="Con_Password" id="Conpassword" maxlength="12" placeholder="Password" size="40">
     </p>
     <p>
-        Tipo de servicio:
-        <select name="Tipo_Servicio" id="Tipo_Servicio">
-            <option value="Free" Free ></option>
-            <option value="Standard" Standard ></option>
-            <option value="Premium" Premium ></option>
+        <label for="Tipo_Servicio"> Tipo de servicio: </label>
+        <select id="Tipo_Servicio">
+            <option value="Free"> Free </option>
+            <option value="Standard"> Standard</option>
+            <option value="Premium"> Premium </option>
+        </select>
     </p>
     <p>
-        Tema:
-        Política <input type="checkbox" name="Politica" id="politica">
-        Negocios <input type="checkbox" name="Negocios" id="negocios">
-        Tecnología <input type="checkbox" name="tecnologia" id="tecnologia">
-        Salud <input type="checkbox" name="Salud" id="salud">
+        Tema: <label for="Politica"> Política </label> <input type="checkbox" name="Temas" id="Politica" value=politica"> /
+        <label for="Negocios"> Negocios </label> <input type="checkbox" name="Temas" id="Negocios" value="negocios"> /
+        <label for="Tecnologia"> Tecnología </label> <input type="checkbox" name="Temas" id="Tecnologia" value="tecnologia"> /
+        <label for="Salud"> Salud </label> <input type="checkbox" name="Temas" id="Salud" value="salud">
     </p>
     <p>
-        Agregue un comentario: <textarea name="Comentario" ></textarea>
+        <label for="Comentario"> Agregue un comentario: </label> <textarea name="Comentario" id="Comentario" ></textarea>
     </p>
     <p>
-        Boton de Enviar <button type="button" name="Boton_De_Enviar" ></button>
+        <button type="button" name="Boton_De_Enviar" > Boton de Enviar </button>
     </p>
-
+</form>
 </body>
 </html>
