@@ -191,3 +191,19 @@ function DibujarImagen(Posx, Posy){
         ctx.drawImage(img, Posx, Posy);
     }
 }
+x=0;
+dx=2;
+function AnimarAuto(){
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    var img = new Image();
+    canvas.width = canvas.width;
+    img.src = "images/auto.png"
+    img.onload = function (){
+        ctx.drawImage(img, x, 100);
+    }
+    if (x>canvas.width){
+        x=0;
+    }
+    x+=dx;
+}
